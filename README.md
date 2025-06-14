@@ -4,7 +4,7 @@
 
 🌍 This 3D Point Cloud Segmentation Python application leverages the Segment Anything Model (SAM) to process and segment 3D point clouds. It transforms point cloud data into a spherical projection, applies SAM-based segmentation to generate masks, and maps the segmented colors back to the 3D point cloud, producing a visually rich .las file for visualization in tools like CloudCompare.
 
-This code is useful when you have a point cloud that has no data annotation and you don't have to go through the hassle of annotating a point cloud. The code performs a zero shot segmentation
+This code is useful when you have a point cloud that has no data annotation and you don't have to go through the hassle of annotating a point cloud. The code performs a zero shot segmentation. You can experiment with code if you have a .las pointcloud. you can alternatively train a deep learning model to segment point cloud by annotating the point cloud on Cloud Compare.
 
 ---
 ![pointcloud](segmented_pointcloud.gif)
