@@ -28,7 +28,7 @@ This code is useful when you have a point cloud that has no data annotation and 
 ├── requirements.txt              # 📜 Python dependencies
 ├── Dockerfile                    # 🐳 Docker configuration for GPU support
 ├── data/
-│   └── unreal.las                # 📉 Input point cloud file
+│   └── unreal.las                # 📉 point cloud file only support .las format
 ├── modules/
 │   ├── __init__.py               # 📦 Makes modules a Python package
 │   ├── data_processing.py        # 🌐 Point cloud loading and transformation
