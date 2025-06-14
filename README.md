@@ -24,7 +24,7 @@ This code is useful when you have a point cloud that has no data annotation and 
 ```text
 3d_point_cloud_segmentation/
 ├── .gitignore                    # 🙈 Git ignore file
-├── README.md                     # 📖 This project documentation
+├── README.md                     # 📖 Documentation
 ├── requirements.txt              # 📜 Python dependencies
 ├── Dockerfile                    # 🐳 Docker configuration for GPU support
 ├── data/
@@ -34,6 +34,12 @@ This code is useful when you have a point cloud that has no data annotation and 
 │   ├── data_processing.py        # 🌐 Point cloud loading and transformation
 │   ├── sam.py                    # 🧠 SAM model initialization and segmentation
 │   └── visualize.py              # 📈 Visualization functions
+├── tests/
+│   ├── __init__.py               # 📦 Makes tests a Python package
+│   ├── test_data_processing.py   # 🧪 Tests for point cloud processing
+│   ├── test_main.py             # 🧪 Tests for pipeline orchestration
+│   ├── test_sam.py              # 🧪 Tests for SAM segmentation
+│   └── test_visualize.py        # 🧪 Tests for visualization
 ├── main.py                       # 🎈 Main pipeline orchestration
 ├── weights/
 │   └── sam_vit_h_4b8939.pth      # 🧠 SAM model weights
