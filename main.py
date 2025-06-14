@@ -6,7 +6,7 @@ from modules.visualize import ImageVisualizer
 import numpy as np
 
 class Pipeline:
-    """Orchestrates point cloud processing, segmentation, and visualization."""
+    """Helps in point cloud processing, segmentation, and visualization."""
     
     def __init__(self, pcd_path: str, output_dir: str, resolution: int = 500):
         """
@@ -45,7 +45,7 @@ class Pipeline:
         segmented_path = os.path.join(self.output_dir, "2d_segmented_projection.jpg")
         self.visualizer.plot_image(image_rgb, segmented_path, masks=masks)
         
-        # Color and export point cloud
+        # Color and export the point cloud
         modified_point_cloud = self.processor.color_point_cloud(segmented_path, mapping)
         segmented_pcd = os.path.join(self.output_dir, "3d_segmented_point_cloud.las")
         self.processor.export_point_cloud(segmented_pcd, modified_point_cloud)

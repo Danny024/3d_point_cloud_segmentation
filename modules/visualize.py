@@ -2,11 +2,11 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 class ImageVisualizer:
-    """Handles plotting of images with optional masks."""
+    """This Handles plotting of images with optional masks."""
     
     def plot_image(self, image: np.ndarray, save_path: str, masks: list = None):
         """
-        Plots an image with optional masks and save to disk.
+        Plots an image with optional masks and save to local computer.
         
         Args:
             image (np.ndarray): Image array to plot.

@@ -4,7 +4,7 @@ import cv2
 import os
 
 class PointCloudProcessor:
-    """Handles point cloud loading, transformation, coloring, and exporting."""
+    """Helps handle point cloud loading, transformation, coloring, and exporting."""
     
     def __init__(self, pcd_path: str, resolution_y: int = 500):
         """
@@ -32,7 +32,7 @@ class PointCloudProcessor:
 
     def get_center_coordinates(self) -> np.ndarray:
         """
-        Compute center coordinates of the point cloud.
+        helps to get center coordinates of the point cloud.
         
         Returns:
             np.ndarray: Center coordinates [x, y, z].
@@ -47,7 +47,7 @@ class PointCloudProcessor:
 
     def generate_spherical_image(self, center_coordinates: np.ndarray) -> tuple[np.ndarray, np.ndarray]:
         """
-        Generate spherical projection image and mapping.
+        Generates spherical projection image and mapping.
         
         Args:
             center_coordinates (np.ndarray): Center coordinates [x, y, z].
@@ -106,7 +106,7 @@ class PointCloudProcessor:
 
     def export_point_cloud(self, output_path: str, modified_point_cloud: np.ndarray):
         """
-        Export colored point cloud to .las file.
+        Exports colored point cloud to .las file.
         
         Args:
             output_path (str): Path to save the .las file.
